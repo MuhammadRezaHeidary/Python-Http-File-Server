@@ -1,3 +1,4 @@
+
 # 🚀 Python HTTP File Server  
 **Muhammad Reza Heidary**  [![Gmail](https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white)](mailto:muhammadreza.heidary@gmail.com)  [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammad-reza-heidary/)  
 *Embedded Systems Designer | Python Developer | IoT & Network Solutions Specialist*  
@@ -42,6 +43,11 @@ python3 ./app.py ~/projects/python
 python3 ./app.py /path/to/directory --port 8080
 ```
 
+### Start server with IP binding (Optional)  
+```bash
+python3 ./app.py /path/to/directory --ip 0.0.0.0 --port 8000
+```
+
 ---
 
 ## 🌟 Why Use This Server?  
@@ -53,7 +59,9 @@ python3 ./app.py /path/to/directory --port 8080
 ---
 
 ## 🖥️ Screenshot Preview  
-![Alt text](./assets/sample-shot.png)    
+![Alt text](./assets/images/sample-shot.png)    
+![Alt text](./assets/images/sample-shot2.png)    
+![Alt text](./assets/images/sample-shot3.png)    
 
 ---
 
@@ -106,7 +114,14 @@ Other devices on your network can access it via your machine's local IP address.
 
 ---
 
+## 📦 Installing Python Dependencies  
+
+To install the required dependencies, run the following command:
+
+```bash
+pip install jinja2
+```
+
+---
+
 💡 **Need a simple way to share files locally? This is your solution!** 🚀  
-
-*"Because even simple tools deserve good design."*
-

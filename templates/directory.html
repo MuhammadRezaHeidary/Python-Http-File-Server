@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Server</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>  
+  <a href="{{ parent_dir }}" class="back-btn">⬅ Back</a>
+  
+  <div class="current-path">
+     {{ current_path }}
+  </div>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Size</th>
+        <th>Access</th>
+        <th>Operation</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in items %}
+      <tr>
+        <td>
+          {% if item.is_dir %}
+            <a href="{{ item.url }}/" class="directory">{{ item.name }}/</a>
+          {% else %}
+            <a href="{{ item.url }}" class="file">{{ item.name }}</a>
+          {% endif %}
+        </td>
+        <td>{{ item.size }}</td>
+        <td>
+          <span class="access {% if item.can_read %}read{% else %}hidden{% endif %}">Read</span>
+          <span class="access {% if item.can_write %}write{% else %}hidden{% endif %}">Write</span>
+          <span class="access {% if item.can_execute %}execute{% else %}hidden{% endif %}">Execute</span>
+        </td>
+        <td class="download-container">
+          {% if not item.is_dir %}
+            <a href="{{ item.url }}" class="download-btn">⬇ Download</a>
+          {% endif %}
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</body>
+</html>
