@@ -53,7 +53,7 @@ python3 ./app.py /path/to/directory --port 8080
 ---
 
 ## 🖥️ Screenshot Preview  
-![Alt text](./assets/sample1.png)    
+![Alt text](./assets/sample-shot.png)    
 
 ---
 
