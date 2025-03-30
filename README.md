@@ -53,7 +53,7 @@ python3 ./app.py /path/to/directory --port 8080
 ---
 
 ## 🖥️ Screenshot Preview  
-*(Imagine a clean, styled directory listing here with proper HTML formatting)*  
+![Alt text](./assets/sample.png)    
 
 ---
 
